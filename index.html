@@ -222,6 +222,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="speak('花的故事。蜜蜂飛嚟幫手傳花粉，花就會生果實。')" class="speak-btn">🔊 朗讀</button>
   </div>
   <div class="part-card">
+    <img src="assets/images/hub_story.png" style="width:100%; max-width:320px; border-radius:20px; margin-bottom:20px;" alt="花的故事">
     <h2 style="font-size:2.8em; color:var(--green); margin-bottom:20px;">🌸 花的故事</h2>
     <p style="font-size:1.7em; line-height:1.8;">
       春天，花開啦！<br>
@@ -243,6 +244,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="speak('雄蕊。雄蕊係黃色嘅部分，有花藥同花絲。花藥會生花粉。')" class="speak-btn">🔊 朗讀</button>
   </div>
   <div class="part-card stamen">
+    <img src="assets/images/hub_stamen.png" style="width:100%; max-width:280px; border-radius:20px; margin-bottom:20px;" alt="雄蕊">
     <div class="part-label" style="color:var(--stamen);">🌼 雄蕊</div>
     <div class="part-desc">
       • 顏色：黃色<br>
@@ -251,14 +253,6 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     </div>
     <button onclick="speak('雄蕊生花粉！')" class="speak-btn">🔊 聽功能</button>
   </div>
-  <svg class="flower-svg" viewBox="0 0 400 320">
-    <circle cx="200" cy="160" r="45" fill="#F4A261"/>
-    <circle cx="200" cy="160" r="22" fill="#E76F51"/>
-    <rect x="130" y="95" width="140" height="38" rx="8" fill="#F4A261"/>
-    <text x="200" y="122" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">雄蕊 - 生花粉</text>
-    <line x1="170" y1="133" x2="170" y2="155" stroke="#F4A261" stroke-width="4"/>
-    <line x1="230" y1="133" x2="230" y2="155" stroke="#F4A261" stroke-width="4"/>
-  </svg>
   <div style="text-align:center; margin-top:20px;">
     <button onclick="goTo('hub')" class="back-btn">🏠 返回中心</button>
   </div>
@@ -271,6 +265,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="speak('雌蕊。雌蕊係粉紅色，有柱頭、花柱同子房。柱頭收花粉，子房生果實。')" class="speak-btn">🔊 朗讀</button>
   </div>
   <div class="part-card pistil">
+    <img src="assets/images/hub_pistil.png" style="width:100%; max-width:280px; border-radius:20px; margin-bottom:20px;" alt="雌蕊">
     <div class="part-label" style="color:var(--pistil);">🌺 雌蕊</div>
     <div class="part-desc">
       • 顏色：粉紅色<br>
@@ -279,13 +274,6 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     </div>
     <button onclick="speak('雌蕊收花粉，生果實！')" class="speak-btn">🔊 聽功能</button>
   </div>
-  <svg class="flower-svg" viewBox="0 0 400 320">
-    <circle cx="200" cy="160" r="45" fill="#F4A261"/>
-    <circle cx="200" cy="160" r="22" fill="#E76F51"/>
-    <rect x="130" y="200" width="140" height="38" rx="8" fill="#E76F51"/>
-    <text x="200" y="227" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">雌蕊 - 收花粉生果</text>
-    <line x1="200" y1="182" x2="200" y2="200" stroke="#E76F51" stroke-width="4"/>
-  </svg>
   <div style="text-align:center; margin-top:20px;">
     <button onclick="goTo('hub')" class="back-btn">🏠 返回中心</button>
   </div>
@@ -297,6 +285,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="goTo('hub')" class="back-btn">⬅️ 返回中心</button>
   </div>
   <h2 style="text-align:center; font-size:2.4em; margin-bottom:20px;">🔗 功能配對</h2>
+  <img src="assets/images/hub_match.png" style="width:100%; max-width:260px; border-radius:16px; margin:10px auto; display:block;" alt="配對">
   <p style="text-align:center; font-size:1.4em;">拖拉下面卡片到正確位置</p>
   
   <div class="drag-container" style="margin-top:30px;">
@@ -324,6 +313,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="goTo('hub')" class="back-btn">⬅️ 返回中心</button>
   </div>
   <h2 style="text-align:center; font-size:2.4em; margin:20px 0;">📚 詞語學習</h2>
+  <img src="assets/images/hub_vocab.png" style="width:100%; max-width:260px; border-radius:16px; margin:10px auto; display:block;" alt="詞語">
   <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; max-width:900px; margin:0 auto;">
     <div onclick="speakVocab(this,'雄蕊')" class="part-card" style="cursor:pointer; text-align:center;">
       <div style="font-size:3em;">🌼</div>
@@ -357,6 +347,7 @@ input[type="range"] { width: 100%; margin: 8px 0; }
     <button onclick="goTo('hub')" class="back-btn">⬅️ 返回中心</button>
   </div>
   <h2 style="text-align:center; font-size:2.6em; margin-bottom:10px;">📝 評估中心</h2>
+  <img src="assets/images/hub_assess.png" style="width:100%; max-width:260px; border-radius:16px; margin:10px auto; display:block;" alt="評估">
   <p style="text-align:center; font-size:1.4em;">選擇一個評估模式</p>
   
   <div style="display:flex; flex-direction:column; gap:16px; max-width:620px; margin:30px auto;">
@@ -593,8 +584,19 @@ function getQuestions(mode, diff) {
 function renderQuizQuestion() {
   const q = state.quiz[state.quizIndex];
   const area = document.getElementById('quizArea');
+  
+  let imgHtml = '';
+  if (state.currentMode === 1) {
+    imgHtml = `<img src="assets/images/hub_stamen.png" style="max-width:180px;border-radius:12px;margin:10px auto;display:block;">`;
+  } else if (state.currentMode === 2) {
+    imgHtml = `<img src="assets/images/hub_match.png" style="max-width:180px;border-radius:12px;margin:10px auto;display:block;">`;
+  } else {
+    imgHtml = `<img src="assets/images/hub_story.png" style="max-width:180px;border-radius:12px;margin:10px auto;display:block;">`;
+  }
+  
   area.innerHTML = `
     <div class="quiz-card">
+      ${imgHtml}
       <div class="quiz-question">${q.q}</div>
       <div id="options"></div>
       <div style="margin-top:20px; text-align:center;">
@@ -717,7 +719,7 @@ function init() {
     speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
   }
   
-  console.log('%c[NT-D] Flower Science SEN ready - MiniMax images connected', 'color:#2A9D8F');
+  console.log('%c[NT-D] Flower Science SEN ready - Every quiz question now has image', 'color:#2A9D8F');
 }
 
 init();
